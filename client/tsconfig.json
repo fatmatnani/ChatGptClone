@@ -5,14 +5,26 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": [
+      "../../node_modules/@heroicons/**/*.d.ts"
+    ],
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+
+    /*Absolute Import */
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"]
+    },
+
 
     /* Linting */
     "strict": true,
